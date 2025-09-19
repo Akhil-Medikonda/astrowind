@@ -21,7 +21,7 @@ const metadataDefinition = () =>
       openGraph: z
         .object({
           url: z.string().optional(),
-          siteName: z.string().optional(),
+          siteName: z.string().default('Akhillav'),
           images: z
             .array(
               z.object({
